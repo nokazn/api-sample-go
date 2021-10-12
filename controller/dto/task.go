@@ -6,11 +6,11 @@ type TaskRequest struct {
 }
 
 type TaskResponse struct {
-	Id      string `json:"id"`
+	Id      int    `json:"id"`
 	Title   string `json:"title"`
 	Content string `json:"content"`
 }
 
 type TasksResponse struct {
-	Tasks []TaskRequest `json:"task"`
+	Tasks []TaskResponse `json:"task"`
 }
